@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows, columns;
+    cin >> rows;
+    cin >> columns;
+
+    int a[rows][columns], b[rows][columns], sum[rows][columns];
+
+    cout << "Enter elements of matrix 1:\n" << endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            cin >> a[i][j];
+        }
+    }
+
+    cout << "Enter elements of matrix 2:\n" << endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            cin >> b[i][j];
+        }
+    }
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            sum[i][j] = a[i][j] + b[i][j];
+        }
+    }
+
+    cout << "Sum of the matrices:\n" << endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            cout << sum[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}

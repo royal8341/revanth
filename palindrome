@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int a,rem,res;
+  cin>>a;
+  int t=a;
+  while(a!=0){
+    rem = a%10;
+    res = res*10+rem;
+    a /= 10;
+  }
+  if (t==res){
+    cout<<"palindrome"<<endl;
+  }
+  else{
+    cout<<"not a palindrome"<<endl;
+  }
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int a,rem,res;
+  cin>>a;
+  int t = a;
+  while(t!=0){
+    rem = t%10;
+    res += rem*rem*rem;
+    t /= 10;
+  }
+  if(res==a){
+    cout<<a<<" is an armstrong number";
+  }
+  else{
+    cout<<a<<" is not an armstrong number";
+  }
+  return 0;
+}

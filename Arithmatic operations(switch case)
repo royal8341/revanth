@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int a,b,ch;
+  cin>>a>>b>>ch;
+  cout<<"Enter your choice\n"<<"1.ADD\n"<<"2.SUB\n"<<"3.MULTIPLY\n"<<"4.DIV\n";
+  switch(ch){
+    case 1:
+      cout<<"Addition is "<<a+b;
+      break;
+    case 2:
+      cout<<"Subtraction is "<<a-b;
+      break;
+    case 3:
+      cout<<"Multiplication is "<<a*b;
+      break;
+    case 4:
+      cout<<"Division is "<<a/b;
+      break;
+  }
+  return 0;
+  
+}

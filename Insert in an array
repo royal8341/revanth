@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a[100], pos, c, n, value;
+   cout<<"Enter number of elements in array:\n"<<endl;
+   cin>>n;
+   cout<<"Enter elements:\n"<<endl;
+   for (c = 0; c < n; c++)
+   {
+   cin>>a[c];
+    }
+   cout<<"Enter the location where you wish to insert an element:\n"<<endl;
+   cin>>pos;
+   cout<<"Enter the value to insert:\n"<<endl;
+   cin>>value;
+   for (c = n - 1; c >= pos - 1; c--)
+   {
+  a[c+1] = a[c];
+    }
+	a[pos-1] = value;
+    cout<<"Resultant array is:\n"<<endl;
+   for (c = 0; c <= n; c++)
+   {
+      cout<<a[c]; 
+         }
+  return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int n;
+  cin>>n;
+  int t1=0,t2=1,next;
+  cout<<t1<<"\t"<<t2<<"\t";
+  for(int i=3;i<=n;i++){
+    next=t1+t2;
+    t1=t2;
+    t2=next;
+    cout<<next<<"\t";
+  }
+}
